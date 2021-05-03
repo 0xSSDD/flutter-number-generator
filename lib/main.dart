@@ -52,8 +52,7 @@ class _MainPageState extends State<MainPage> {
                 child: Text("Generate"),
                 onPressed: () async {
                   randomNumberObject = (await fetchRandomNumber());
-                  // translationObject.input = inputText;
-                  // prefs.setString(DateTime.now().toString(), randomNumberObject.result);
+                  //prefs.setString(DateTime.now().toString(), randomNumberObject.result);
                   setState(() {
                     previousNumbers.add(randomNumberObject);
                   });
